@@ -18,7 +18,7 @@ layout: default
 
     function getSong(){
     console.log('in getSong');
-    var textArray = [
+    var songs = [
         ['This Could Be The Start of Something Big', 'Eb', 'G (Pickup)', 'G', 'Eb', 'audio/EFlat.mp3', 'Eb', "(Lead pickup) You're walkin' a (all)long the street"],
         ['All I Do Is Dream Of You', 'F', 'C', 'A', 'G', 'audio/CNatural.mp3', 'C', "(Bass pickup) Ba dm dm... Dee oo ee oo ee oo"],
         ["I've Got The World On A String", 'E', 'C', 'Bb', 'G', 'audio/FNatural.mp3', 'F', "I'm sittin' on top of the world"],
@@ -32,8 +32,8 @@ layout: default
         ['Have A Little Talk With Myself', 'A', 'F', 'C', 'F', 'audio/FNatural.mp3', 'F', "Lately I have noticed all my friends avoiding me"],
         ['Oh! Look At Me Now', 'F', 'C', 'C', 'F', 'audio/FNatural.mp3', 'F', "Never was a romance man"],
     ];
-    var randomNumber = Math.floor(Math.random()*textArray.length);
-    return textArray[randomNumber];
+    var randomNumber = Math.floor(Math.random()*songs.length);
+    return songs[randomNumber];
     }
 
     document.getElementById("randomButton").onclick = function () {
