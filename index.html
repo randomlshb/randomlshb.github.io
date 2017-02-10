@@ -2,10 +2,20 @@
 layout: default
 ---
 
-<script src="http://code.jquery.com/jquery.min.js"></script>
+<button id="randomButton" type="button" class="btn btn-primary">Random song</button>
+<h1 id="songTitle">Orig</h1>
+<h3 id="tenor">Orig</h3>
+<h3 id="lead">Orig</h3>
+<h3 id="bari">Orig</h3>
+<h3 id="bass">Orig</h3>
+<h5 id="pitchStr">Orig</h5>
+<audio id="audio" controls="controls">
+    <source id="pitch" type="audio/mpeg" src=""></audio>
+</audio>
+
 <script>
 
-function getSong(){
+    function getSong(){
     console.log('in getSong');
     var textArray = [
         ['This could be the start of something big', 'Ab', 'a', 'a', 'a', 'audio/AFlat.mp3', 'Ab1'],
@@ -16,10 +26,9 @@ function getSong(){
     ];
     var randomNumber = Math.floor(Math.random()*textArray.length);
     return textArray[randomNumber];
-}
+    }
 
-$(document).ready(function(){ 
-    $('#randomButton .btn').click(function () {
+    document.getElementById("randomButton").onclick = function () {
         console.log('test');
         var currSong = getSong();
         document.getElementById("songTitle").innerHTML = currSong[0];
@@ -31,19 +40,5 @@ $(document).ready(function(){
         var audio = document.getElementById("audio");
         audio.load();
         document.getElementById("pitchStr").innerHTML = "Pitch: " + currSong[6];
-    });
-});
+    };
 </script>
-
-<div id="randomButton">
-<button type="button" class="btn btn-primary">Random song</button>
-</div>
-<h1 id="songTitle">Orig</h1>
-<h3 id="tenor">Orig</h3>
-<h3 id="lead">Orig</h3>
-<h3 id="bari">Orig</h3>
-<h3 id="bass">Orig</h3>
-<h5 id="pitchStr">Orig</h5>
-<audio id="audio" controls="controls">
-    <source id="pitch" type="audio/mpeg" src=""></audio>
-</audio>
