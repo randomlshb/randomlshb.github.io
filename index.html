@@ -2,5 +2,48 @@
 layout: default
 ---
 
-<button type="button" class="btn btn-primary">Random song</button>
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script>
 
+function getSong(){
+    console.log('in getSong');
+    var textArray = [
+        ['This could be the start of something big', 'Ab', 'a', 'a', 'a', 'audio/AFlat.mp3', 'Ab1'],
+        ['Too Marvelous for Words', 'Bb', 'b', 'b', 'b', 'audio/AFlat.mp3', 'Ab2'],
+        ['Love Letters', 'Db', 'c', 'c', 'c', 'audio/AFlat.mp3', 'Ab3'],
+        ['Rhythm of Love', 'Eb', 'e', 'e', 'e', 'audio/AFlat.mp3', 'Ab4'],
+        ['Blah', 'F', 'f', 'f', 'f', 'audio/AFlat.mp3', 'Ab5']
+    ];
+    var randomNumber = Math.floor(Math.random()*textArray.length);
+    return textArray[randomNumber];
+}
+
+$(document).ready(function(){ 
+    $('#randomButton .btn').click(function () {
+        console.log('test');
+        var currSong = getSong();
+        document.getElementById("songTitle").innerHTML = currSong[0];
+        document.getElementById("tenor").innerHTML = "Tenor: " + currSong[1];
+        document.getElementById("lead").innerHTML = "Lead: " + currSong[2];
+        document.getElementById("bari").innerHTML = "Bari: " + currSong[3];
+        document.getElementById("bass").innerHTML = "Bass: " + currSong[4];
+        document.getElementById("pitch").src = currSong[5];
+        var audio = document.getElementById("audio");
+        audio.load();
+        document.getElementById("pitchStr").innerHTML = "Pitch: " + currSong[6];
+    });
+});
+</script>
+
+<div id="randomButton">
+<button type="button" class="btn btn-primary">Random song</button>
+</div>
+<h1 id="songTitle">Orig</h1>
+<h3 id="tenor">Orig</h3>
+<h3 id="lead">Orig</h3>
+<h3 id="bari">Orig</h3>
+<h3 id="bass">Orig</h3>
+<h5 id="pitchStr">Orig</h5>
+<audio id="audio" controls="controls">
+    <source id="pitch" type="audio/mpeg" src=""></audio>
+</audio>
