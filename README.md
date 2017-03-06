@@ -29,3 +29,7 @@ Click on `Settings`:
 Rename your repository to `YOUR ACCOUNT USERNAME` and then click `Rename`:
 
 ![image3](./rename.jpg)
+
+```
+randomlshb.github.io -> YOURACCOUNT.github.io
+```
