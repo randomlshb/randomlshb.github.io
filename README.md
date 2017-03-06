@@ -10,4 +10,4 @@ NOTE: Your username will be your URL (unless you redirect using DNS)
 
 Once logged into your account, go to the original [randomlshb](https://github.com/randomlshb/randomlshb.github.io) repository and Click "Fork"
 
-![image](./fork.svg)
+![image](./fork.jpg)
