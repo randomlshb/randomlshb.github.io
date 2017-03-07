@@ -17,7 +17,7 @@ NOTE: Your username will be your URL (unless you redirect using DNS)
 
 Once logged into your account, go to the original [randomlshb](https://github.com/randomlshb/randomlshb.github.io) repository and Click "Fork"
 
-![image](./fork.jpg)
+![image](./readmepics/fork.jpg)
 
 ## Edit your own repository
 
@@ -31,11 +31,11 @@ https://github.com/YOURUSERNAME/randomlshb.github.io
 
 Click on `Settings`:
 
-![image2](./settings.jpg)
+![image2](./readmepics/settings.jpg)
 
 Rename your repository to `YOUR ACCOUNT USERNAME` and then click `Rename`:
 
-![image3](./rename.jpg)
+![image3](./readmepics/rename.jpg)
 
 ```
 randomlshb.github.io -> YOURACCOUNT.github.io
@@ -45,7 +45,7 @@ randomlshb.github.io -> YOURACCOUNT.github.io
 
 Modify the `songs.csv` file located in your repository.
 
-![image4](./edit.jpg)
+![image4](./readmepics/edit.jpg)
 
 The format for each line is below:
 
