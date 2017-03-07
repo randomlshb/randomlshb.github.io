@@ -1,5 +1,12 @@
 # Harmony Brigade Randomizer
 
+This README assumes no `git` knowledge at all. Everything will be modified using the browser.
+
+The randomizer is hosted by Github as well. If you want to host the randomizer on your own website, copy over the following files into your web root:
+
+```
+```
+
 ## Create a Github account for your brigade
 
 ```
@@ -33,3 +40,50 @@ Rename your repository to `YOUR ACCOUNT USERNAME` and then click `Rename`:
 ```
 randomlshb.github.io -> YOURACCOUNT.github.io
 ```
+
+## Create your song list
+
+Modify the `songs.csv` file located in your repository.
+
+![image4](./edit.jpg)
+
+The format for each line is below:
+
+```
+Song Name
+Tenor Starting Pitch
+Lead Starting Pitch
+Bari Starting Pitch
+Bass Starting Pitch
+Path to the audio file for the pitch to be blown
+Letter displayed for the pitch being blown
+Starting words
+```
+
+For example:
+```
+Ive Got The World On A String,E,C,Bb,G,audio/FNatural.mp3,F,Im sittin on top of the world
+```
+
+```
+Song Name - Ive Got The World On A String
+Tenor Starting Pitch - E
+Lead Starting Pitch - C
+Bari Starting Pitch - Bb
+Bass Starting Pitch - G
+Path to the audio file for the pitch to be blown - audio/FNatural.mp3
+Letter displayed for the pitch being blown - F
+Starting words - I'm sittin on top of the world
+```
+
+Once done modifying, be sure to commit your changes.
+
+## Check out the new website
+
+Once done modifying your songs, head to `http://YOURACCOUNTNAME.github.io` and your new randomizer should be available.
+
+## BONUS - Redirect using DNS
+
+If you want to have your own custom URL for the randomizer instead of the `*.github.io`:
+
+After purchasing the domain you want, create a new file called `CNAME` in the root directory with only the contents of the URL. Point your domain to `YOURACCOUNTNAME.github.io` and everything should magically work.
