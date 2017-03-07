@@ -2,10 +2,8 @@
 
 This README assumes no `git` knowledge at all. Everything will be modified using the browser.
 
-The randomizer is hosted by Github as well. If you want to host the randomizer on your own website, copy over the following files into your web root:
+The randomizer is hosted by Github as well. If you want to host the randomizer on your own website, scroll down to the bottom of this list.
 
-```
-```
 
 ## Create a Github account for your brigade
 
@@ -87,3 +85,11 @@ Once done modifying your songs, head to `http://YOURACCOUNTNAME.github.io` and y
 If you want to have your own custom URL for the randomizer instead of the `*.github.io`:
 
 After purchasing the domain you want, create a new file called `CNAME` in the root directory with only the contents of the URL. Point your domain to `YOURACCOUNTNAME.github.io` and everything should magically work.
+
+# Hosting on your website
+
+To host the website yourself, you can generate the source files by invoking [Jekyll](https://jekyllrb.com/).
+
+or..
+
+Download the zip file of the generated source files [here](https://github.com/randomlshb/randomlshb-source/archive/master.zip). Follow the same steps above for modifying the `songs.csv`.
